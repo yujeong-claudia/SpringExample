@@ -14,7 +14,7 @@ public class ReviewBO {
 	
 	// input: X
 	// output: Review
-	public Review getReview() {
-		return reviewMapper.selectReview();
+	public Review getReview(int id) {
+		return reviewMapper.selectReview(id);
 	}
 }
