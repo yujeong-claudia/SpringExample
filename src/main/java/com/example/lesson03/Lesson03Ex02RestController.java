@@ -27,4 +27,12 @@ public class Lesson03Ex02RestController {
 		int rowCount = reviewBO.addReview(review);
 		return "성공한 행의 개수:" + rowCount; // String + int => String
 	}
+	
+	// url : http://localhost/lesson03/ex02/1
+	@RequestMapping("/lesson03/ex02/1")
+	public String ex02_1() {
+		int rowCount = reviewBO.addReviewAsField(4, "콤비네이션R", "이병헌", 5.0, "역시 맛있다!");
+		return "성공한 행의 개수:" + rowCount; // String + int => String
+	}
+	
 }
