@@ -16,4 +16,8 @@ public class StudentBO {
 	public void addStudent(Student student) {
 		studentMapper.insertStudent(student);
 	}
+	
+	public Student getLatestStudent() {
+		return studentMapper.selectLatestStudent();
+	}
 }

@@ -16,7 +16,7 @@
 			,`updatedAt`
  		)
  		VALUES
- 		(
+ 		( 
  			#{name}
  			,#{phoneNumber}
  			,#{email}
@@ -26,4 +26,19 @@
  		)
  		
  	</insert>
+ 	
+ 	<select id="selectLatestStudent" resultType="com.example.lesson04.domain.Student">
+ 		SELECT
+ 			`id`
+ 			,`name`
+			,`phoneNumber`
+			,`email`
+			,`dreamJob`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`new_student`
+		ORDER BY `id` DESC
+		LIMIT 1		
+ 	</select>
  </mapper>
