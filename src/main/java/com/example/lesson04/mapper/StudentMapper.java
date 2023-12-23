@@ -9,5 +9,5 @@ public interface StudentMapper {
 	
 	public void insertStudent(Student student);
 	
-	public Student selectLatestStudent();
+	public Student selectStudentById(int id);
 }

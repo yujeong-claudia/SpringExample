@@ -22,8 +22,8 @@
 	<%-- 얼럿창 안 띄워지고 글자로 들어감 --%>
 	<%-- 문자열 escape: 코드가 나오지않고 글자로 나오는 처리 --%>
 	<c:out value="<script>alert('얼럿창 띄우기')</script>"/> <br>
-	<c:out value="<script>alert('얼럿창 띄우기')</script>"/> escapeXml="true" <br>
-	<%-- <c:out value="<script>alert('얼럿창 띄우기')</script>"/> escapeXml="false" <br>--%>
+	<c:out value="<script>alert('얼럿창 띄우기')</script>" escapeXml="true"/>  <br>
+	<%-- <c:out value="<script>alert('얼럿창 띄우기')</script>" escapeXml="false" /><br> --%>
 	
 	<h1>3. 조건문(c:if)</h1>
 	<c:if test="${number1 > 50}">
