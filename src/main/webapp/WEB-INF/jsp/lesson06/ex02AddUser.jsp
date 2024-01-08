@@ -37,7 +37,7 @@
 			// nameStatusArea 하위 태그들을 초기화
 			$('#nameStatusArea').empty(); // 자식 태그들을 모두 비운다.
 			
-			//alert("중복확인");
+			//  alert("중복확인");
 			let name = $("#name").val().trim();
 			
 			// validation
