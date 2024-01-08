@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.example.lesson04.domain.Student;
 import com.example.lesson04.mapper.StudentMapper;
 import com.example.lesson07.entity.StudentEntity;
-import com.example.lesson07.repository.StudentRepository2;
+import com.example.lesson07.repository.StudentRepository;
 
 @Service
 public class StudentBO {
@@ -17,7 +17,7 @@ public class StudentBO {
 	private StudentMapper studentMapper;
 	
 	@Autowired
-	private StudentRepository2 studentRepository;
+	private StudentRepository studentRepository;
 	
 	// JAP로 insert
 	public StudentEntity addStudent(String name, String phoneNumber,
