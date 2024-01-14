@@ -20,7 +20,7 @@ public class StudentBO {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	// JAP로 insert
+	// JPA로 insert
 	public StudentEntity addStudent(String name, String phoneNumber,
 			String email, String dreamJob) {
 		

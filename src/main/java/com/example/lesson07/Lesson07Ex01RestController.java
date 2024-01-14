@@ -31,16 +31,15 @@ public class Lesson07Ex01RestController {
 	@GetMapping("/2")
 	public StudentEntity udtate() {
 		// id가 3번인 dreamJob 변경
-		// 5, 디자이너
 		
-		return studentBO.updateStudentDreamJobById(5, "디자이너");
+		return studentBO.updateStudentDreamJobById(3, "세븐틴");
 	}
 	
 	// d: delete
 	@GetMapping("/3")
 	public String delete() {
-		//id:5
-		studentBO.deleteStudentById(5);
+		//id:3
+		studentBO.deleteStudentById(3);
 		return "삭제 완료";
 	}
 }

@@ -38,8 +38,8 @@ public interface StudentRepository extends JpaRepository<StudentEntity, Integer>
 	
 	// ex02/2 - JPQL(Entity에 조회, db에 직접 가지않는다, entity가 대신 간다)
 	// from은 테이블이 아니라 엔티티명 -> 엔티티이름이 st(별칭)로 바꼈다
-	//@Query(value = "select st from StudentEntity st where st.dreamJob =:dreamJob") 
-	@Query(value = "select * from new_student where dreamJob=:dreamJob", nativeQuery = true) // nativeQuery SQL 조회
+	//@Query(value = "select st from StudentEntity st where st.dreamJob =:dreamJob") // JPQL(엔티티 조회)
+	@Query(value = "select * from new_student where dreamJob=:dreamJob", nativeQuery = true) // nativeQuery SQL문 조회
 	public List<StudentEntity> findByDreamJob(@Param("dreamJob") String dreamJob);
 		
 }
